@@ -127,22 +127,26 @@ q:before {
   box-sizing: border-box;
   line-height: 1.5;
   background-color: #f7f7f7;
-  font-family: 'Rock Salt', cursive;
 }
 
 /*Header*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-
-h1 p {
-  position: inherit;
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  text-align: center;
 }
 
 p {
   color: #373737;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 
 /*Nav bar*/
 
@@ -152,7 +156,6 @@ nav ul li {
 
 
 nav li a {
-  font-family: 'Handlee', cursive;
   list-style: none;
   width: 100%;
   display: block;
@@ -169,12 +172,20 @@ nav li :hover {
   color: #b46161;
 }
 
-/*Images*/
+/* Image */
 
 img {
+  width: 50%;
+  padding: 1rem;
   background-color: #ffffff;
   padding: 0.5rem;
   resize: both;
+}
+
+.logo {
+  clear: both;
+  padding: 0%;
+  width: 8rem;
 }
 
 /*Footer*/
@@ -203,14 +214,6 @@ footer {
   margin-bottom: 3rem;
 }
 
-/* Image */
-
-img {
-  width: 50%;
-  padding: 1rem;
-}
-
-
 /* Tablet*/
 @media screen and (min-width:35rem) {
 
@@ -220,26 +223,25 @@ img {
     width: calc(20%);
     float: left;
     float: left;
-    font-family: 'Bellefair', serif;
-  }
-
-  .logo {
-    width: 6rem;
   }
 
   /*Images*/
+
+  .logo {
+    width: 6rem;
+    background-color: #ffffff
+  }
+
   figure {
     position: relative;
     width: calc(33.33%);
     float: left;
-    font-family: 'Bellefair', serif;
   }
 
 
   .container {
     border: 1px;
     padding: 1rem;
-    font-family: 'Bellefair', serif;
   }
 
   .container img {

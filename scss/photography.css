@@ -1,93 +1,93 @@
-html,
-body,
-div,
-span,
+/*CSS Reset*/
+
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
 summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
 time,
-mark,
-audio,
+tr,
+tt,
+u,
+ul,
+var,
 video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -102,9 +102,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
 ol,
 ul {
@@ -116,26 +113,14 @@ q {
   quotes: none;
 }
 
+blockquote:after,
 blockquote:before,
-blockquote:after {
-  content: "";
+q:after,
+q:before {
+  content: '';
   content: none;
 }
 
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.test {
-  color: rebeccapurple;
-}
 
 * {
   box-sizing: border-box;
@@ -143,12 +128,18 @@ table {
   background-color: #f7f7f7;
 }
 
+body {
+  height: 100%;
+}
+
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
+/*Header*/
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 4rem;
@@ -165,7 +156,18 @@ header {
   text-align: center;
 }
 
+.logo {
+  clear: both;
+  padding: 0%;
+  width: 8rem;
+}
+
 /*Nav bar*/
+
+nav ul li {
+  display: inline;
+}
+
 
 nav li a {
   list-style: none;
@@ -184,54 +186,60 @@ nav li :hover {
   color: #b46161;
 }
 
-nav ul li {
-  display: inline;
-}
-
 /*Images*/
 
-
-.logo {
-  clear: both;
-  padding: 0%;
-  width: 8rem;
+img {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  resize: both;
 }
 
-.container {
-  justify-content: center;
-  border: 1px;
-  padding: 1rem;
-  padding-left: 5rem;
-}
-
-.container img {
-  width: 100%;
-  height: auto;
-  border: 1px;
-  padding: 1rem;
-  float: left;
-}
-
-.container p {
-  border: 1px;
-  padding: 1rem;
-}
-
-.about {
+.image {
+  width: 20rem;
   position: relative;
-  width: calc(75%);
-  float: left;
+  display: center;
+  border: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
+.image-2 {
+  width: 16rem;
+  position: relative;
+  display: center;
+  border: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.image-3 {
+  width: 28rem;
+  position: relative;
+  display: center;
+  border: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* added */
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+
+/*Footer*/
 footer {
   clear: both;
   position: relative;
   z-index: 10;
-  height: 3em;
-  margin-top: -3em;
 }
 
 .nav-links {
+  margin-top: 5rem;
   text-align: center;
   background-color: #ffffff;
 }
@@ -241,48 +249,34 @@ footer {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 35rem) {
+.col {
+  float: left;
+}
+
+/* Tablet*/
+@media screen and (min-width:35rem) {
 
   .logo {
     width: 6rem;
     background-color: #ffffff
   }
 
-  .container {
-    justify-content: center;
-    border: 1px;
-    padding: 1rem;
-  }
-
-  .container img {
-    width: 100%;
-    height: auto;
-    border: 1px;
-    padding: 1rem;
-    float: left;
-  }
-
-  .container p {
-    border: 1px;
-    padding: 1rem;
-  }
-
-  .about {
-    position: relative;
-    width: calc(50%);
-    float: left;
-  }
-
-  figure {
-    position: relative;
-    width: calc(50%);
-    float: left;
-  }
+  /*Nav bar*/
 
   nav li a {
     width: calc(20%);
     float: left;
+    float: left;
   }
+
+  /*Images*/
+  figure {
+    position: relative;
+    width: calc(33.33%);
+    float: left;
+  }
+
+
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=photography.css.map */

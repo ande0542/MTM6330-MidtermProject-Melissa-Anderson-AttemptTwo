@@ -1,93 +1,93 @@
-html,
-body,
-div,
-span,
+/*CSS Reset*/
+
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
 summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
 time,
-mark,
-audio,
+tr,
+tt,
+u,
+ul,
+var,
 video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -102,9 +102,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
 ol,
 ul {
@@ -116,26 +113,15 @@ q {
   quotes: none;
 }
 
+blockquote:after,
 blockquote:before,
-blockquote:after {
-  content: "";
+q:after,
+q:before {
+  content: '';
   content: none;
 }
 
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.test {
-  color: rebeccapurple;
-}
 
 * {
   box-sizing: border-box;
@@ -148,6 +134,8 @@ table {
   display: block;
   clear: both;
 }
+
+/*Header*/
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
@@ -167,6 +155,11 @@ header {
 
 /*Nav bar*/
 
+nav ul li {
+  display: inline;
+}
+
+
 nav li a {
   list-style: none;
   width: 100%;
@@ -179,18 +172,11 @@ nav li a {
   color: #373737;
 }
 
-
 nav li :hover {
   color: #b46161;
 }
 
-nav ul li {
-  display: inline;
-}
-
 /*Images*/
-
-
 .logo {
   clear: both;
   padding: 0%;
@@ -201,7 +187,7 @@ nav ul li {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
 }
 
 .container img {
@@ -217,12 +203,15 @@ nav ul li {
   padding: 1rem;
 }
 
+
 .about {
   position: relative;
   width: calc(75%);
   float: left;
 }
 
+
+/*Footer*/
 footer {
   clear: both;
   position: relative;
@@ -241,8 +230,19 @@ footer {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 35rem) {
 
+/* Tablet*/
+@media screen and (min-width:35rem) {
+
+  /*Nav bar*/
+
+  nav li a {
+    width: calc(20%);
+    float: left;
+    float: left;
+  }
+
+  /*Images*/
   .logo {
     width: 6rem;
     background-color: #ffffff
@@ -272,17 +272,6 @@ footer {
     width: calc(50%);
     float: left;
   }
-
-  figure {
-    position: relative;
-    width: calc(50%);
-    float: left;
-  }
-
-  nav li a {
-    width: calc(20%);
-    float: left;
-  }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */
