@@ -1,173 +1,87 @@
-/*CSS Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-    content: '';
-    content: none;
-}
-
-
-
-* {
-    box-sizing: border-box;
-    line-height: 1.5;
-    background-color: #f7f7f7;
-    font-family: 'Rock Salt', cursive;
-}
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-/*Header*/
+body {
+  line-height: 1; }
 
 h1 {
-    text-align: center;
-}
+  font-family: Times New Roman, Times, serif;
+  font-size: 4rem;
+  text-align: center; }
 
 p {
-    font-size: 3rem;
-    color: #373737;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  color: #373737;
+  text-align: center; }
+
+blockquote {
+  quotes: none; }
+  blockquote:before {
+    content: "";
+    content: none; }
+  blockquote:after {
+    content: "";
+    content: none; }
+
+q {
+  quotes: none; }
+  q:before {
+    content: "";
+    content: none; }
+  q:after {
+    content: "";
+    content: none; }
+
+ol {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article {
+  display: block; }
+
+aside {
+  display: block; }
+
+details {
+  display: block; }
+
+figure {
+  display: block; }
+
+figcaption {
+  display: block; }
+
+footer {
+  display: block;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em; }
 
 header {
-    text-align: center;
-}
+  display: block;
+  text-align: center; }
 
-/*Nav bar*/
+hgroup {
+  display: block; }
 
-nav ul li {
-    display: inline;
-}
+menu {
+  display: block; }
 
-nav li a .logo {
-    height: 3rem;
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
-nav li a {
-    font-family: 'Handlee', cursive;
+nav {
+  display: block; }
+  nav li a {
     list-style: none;
     width: 100%;
     display: block;
@@ -176,117 +90,86 @@ nav li a {
     margin: 0;
     padding: 3rem;
     text-align: center;
-    color: #373737;
-}
+    color: #373737; }
+  nav li :hover {
+    color: #b46161; }
+  nav ul li {
+    display: inline; }
 
-nav li :hover {
-    color: #b46161;
-}
+section {
+  display: block; }
 
-/*Images*/
+.test {
+  color: rebeccapurple; }
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f7f7f7; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.logo {
+  clear: both;
+  padding: 0;
+  width: 8rem; }
 
 .container {
-    justify-content: center;
-    border: 1px;
-    padding: 1rem;
-    font-family: 'Bellefair', serif;
-    padding-left: 5rem;
-}
-
-.container img {
+  justify-content: center;
+  border: 1px;
+  padding: 1rem;
+  padding-left: 5rem; }
+  .container img {
     width: 100%;
     height: auto;
     border: 1px;
     padding: 1rem;
-    float: left;
-}
-
-.container p {
+    float: left; }
+  .container p {
     border: 1px;
-    padding: 1rem;
-}
-
+    padding: 1rem; }
 
 .about {
-    position: relative;
-    width: calc(75%);
-    float: left;
-}
-
-
-/*Footer*/
-footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
-}
+  position: relative;
+  width: calc(75%);
+  float: left; }
 
 .nav-links {
-    text-align: center;
-    background-color: #ffffff;
-}
+  text-align: center;
+  background-color: #ffffff; }
 
 .trade-mark {
-    text-align: center;
-    background-color: #ffffff;
-}
+  text-align: center;
+  background-color: #ffffff; }
 
-
-/* Tablet*/
-@media screen and (min-width:35rem) {
-
-    /*Nav bar*/
-
-    nav li a {
-        width: calc(20%);
-        float: left;
-        float: left;
-        font-family: 'Bellefair', serif;
-    }
-
-    /*Images*/
-
-    .logo {
-        width: 4rem;
-    }
-
-
-    /*Images*/
-
-    .container {
-        justify-content: center;
-        border: 1px;
-        padding: 1rem;
-        font-family: 'Bellefair', serif;
-    }
-
+@media screen and (min-width: 35rem) {
+  .logo {
+    width: 6rem;
+    background-color: #ffffff; }
+  .container {
+    justify-content: center;
+    border: 1px;
+    padding: 1rem; }
     .container img {
-        width: 100%;
-        height: auto;
-        border: 1px;
-        padding: 1rem;
-        float: left;
-    }
-
+      width: 100%;
+      height: auto;
+      border: 1px;
+      padding: 1rem;
+      float: left; }
     .container p {
-        border: 1px;
-        padding: 1rem;
-    }
-
-    .about {
-        position: relative;
-        width: calc(50%);
-        float: left;
-    }
-
-    /*Images*/
-    figure {
-        position: relative;
-        width: calc(50%);
-        float: left;
-        font-family: 'Bellefair', serif;
-    }
-
-}
+      border: 1px;
+      padding: 1rem; }
+  .about {
+    position: relative;
+    width: calc(50%);
+    float: left; }
+  figure {
+    position: relative;
+    width: calc(50%);
+    float: left; }
+  nav li a {
+    width: calc(20%);
+    float: left; } }

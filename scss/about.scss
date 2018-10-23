@@ -1,0 +1,506 @@
+//colors
+$white: #ffffff;
+$color_black_haze_approx: #f7f7f7;
+$color_tuatara_approx: #373737;
+$color_matrix_approx: #b46161;
+
+//fonts
+$font_0: Times New Roman;
+$font_1: Times;
+$font_2: serif;
+
+//@extend-elements
+//original selectors
+//a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+%extend_1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+a {
+  @extend %extend_1;
+}
+
+abbr {
+  @extend %extend_1;
+}
+
+acronym {
+  @extend %extend_1;
+}
+
+address {
+  @extend %extend_1;
+}
+
+applet {
+  @extend %extend_1;
+}
+
+article {
+  @extend %extend_1;
+  display: block;
+}
+
+aside {
+  @extend %extend_1;
+  display: block;
+}
+
+audio {
+  @extend %extend_1;
+}
+
+b {
+  @extend %extend_1;
+}
+
+big {
+  @extend %extend_1;
+}
+
+blockquote {
+  @extend %extend_1;
+  quotes: none;
+
+  &:after {
+    content: '';
+    content: none;
+  }
+
+  &:before {
+    content: '';
+    content: none;
+  }
+}
+
+body {
+  @extend %extend_1;
+}
+
+canvas {
+  @extend %extend_1;
+}
+
+caption {
+  @extend %extend_1;
+}
+
+center {
+  @extend %extend_1;
+}
+
+cite {
+  @extend %extend_1;
+}
+
+code {
+  @extend %extend_1;
+}
+
+dd {
+  @extend %extend_1;
+}
+
+del {
+  @extend %extend_1;
+}
+
+details {
+  @extend %extend_1;
+  display: block;
+}
+
+dfn {
+  @extend %extend_1;
+}
+
+div {
+  @extend %extend_1;
+}
+
+dl {
+  @extend %extend_1;
+}
+
+dt {
+  @extend %extend_1;
+}
+
+em {
+  @extend %extend_1;
+}
+
+embed {
+  @extend %extend_1;
+}
+
+fieldset {
+  @extend %extend_1;
+}
+
+figcaption {
+  @extend %extend_1;
+  display: block;
+}
+
+figure {
+  @extend %extend_1;
+  display: block;
+}
+
+footer {
+  @extend %extend_1;
+  display: block;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+}
+
+form {
+  @extend %extend_1;
+}
+
+h1 {
+  @extend %extend_1;
+  font-family: $font_0, $font_1, $font_2;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  @extend %extend_1;
+}
+
+h3 {
+  @extend %extend_1;
+}
+
+h4 {
+  @extend %extend_1;
+}
+
+h5 {
+  @extend %extend_1;
+}
+
+h6 {
+  @extend %extend_1;
+}
+
+header {
+  @extend %extend_1;
+  display: block;
+  text-align: center;
+}
+
+hgroup {
+  @extend %extend_1;
+  display: block;
+}
+
+html {
+  @extend %extend_1;
+}
+
+i {
+  @extend %extend_1;
+}
+
+iframe {
+  @extend %extend_1;
+}
+
+img {
+  @extend %extend_1;
+}
+
+ins {
+  @extend %extend_1;
+}
+
+kbd {
+  @extend %extend_1;
+}
+
+label {
+  @extend %extend_1;
+}
+
+legend {
+  @extend %extend_1;
+}
+
+li {
+  @extend %extend_1;
+}
+
+mark {
+  @extend %extend_1;
+}
+
+menu {
+  @extend %extend_1;
+  display: block;
+}
+
+nav {
+  @extend %extend_1;
+  display: block;
+
+  li {
+    a {
+      list-style: none;
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      background-color: $white;
+      margin: 0;
+      padding: 3rem;
+      text-align: center;
+      color: $color_tuatara_approx;
+    }
+
+    :hover {
+      color: $color_matrix_approx;
+    }
+  }
+
+  ul li {
+    display: inline;
+  }
+}
+
+object {
+  @extend %extend_1;
+}
+
+ol {
+  @extend %extend_1;
+  list-style: none;
+}
+
+output {
+  @extend %extend_1;
+}
+
+p {
+  @extend %extend_1;
+  color: $color_tuatara_approx;
+  text-align: center;
+}
+
+pre {
+  @extend %extend_1;
+}
+
+q {
+  @extend %extend_1;
+  quotes: none;
+
+  &:after {
+    content: '';
+    content: none;
+  }
+
+  &:before {
+    content: '';
+    content: none;
+  }
+}
+
+ruby {
+  @extend %extend_1;
+}
+
+s {
+  @extend %extend_1;
+}
+
+samp {
+  @extend %extend_1;
+}
+
+section {
+  @extend %extend_1;
+  display: block;
+}
+
+small {
+  @extend %extend_1;
+}
+
+span {
+  @extend %extend_1;
+}
+
+strike {
+  @extend %extend_1;
+}
+
+strong {
+  @extend %extend_1;
+}
+
+sub {
+  @extend %extend_1;
+}
+
+summary {
+  @extend %extend_1;
+}
+
+sup {
+  @extend %extend_1;
+}
+
+table {
+  @extend %extend_1;
+}
+
+tbody {
+  @extend %extend_1;
+}
+
+td {
+  @extend %extend_1;
+}
+
+tfoot {
+  @extend %extend_1;
+}
+
+th {
+  @extend %extend_1;
+}
+
+thead {
+  @extend %extend_1;
+}
+
+time {
+  @extend %extend_1;
+}
+
+tr {
+  @extend %extend_1;
+}
+
+tt {
+  @extend %extend_1;
+}
+
+u {
+  @extend %extend_1;
+}
+
+ul {
+  @extend %extend_1;
+  list-style: none;
+}
+
+var {
+  @extend %extend_1;
+}
+
+video {
+  @extend %extend_1;
+}
+
+* {
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: $color_black_haze_approx;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo {
+  clear: both;
+  padding: 0;
+  width: 8rem;
+}
+
+.container {
+  justify-content: center;
+  border: 1px;
+  padding: 1rem;
+  padding-left: 4rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px;
+    padding: 1rem;
+    float: left;
+  }
+
+  p {
+    border: 1px;
+    padding: 1rem;
+  }
+}
+
+.about {
+  position: relative;
+  width: calc(75%);
+  float: left;
+}
+
+.nav-links {
+  text-align: center;
+  background-color: $white;
+}
+
+.trade-mark {
+  text-align: center;
+  background-color: $white;
+}
+
+@media screen and(min-width:35rem) {
+  .logo {
+    width: 6rem;
+    background-color: $white;
+  }
+
+  .container {
+    justify-content: center;
+    border: 1px;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px;
+      padding: 1rem;
+      float: left;
+    }
+
+    p {
+      border: 1px;
+      padding: 1rem;
+    }
+  }
+
+  .about {
+    position: relative;
+    width: calc(50%);
+    float: left;
+  }
+
+  nav li a {
+    width: calc(20%);
+    float: left;
+  }
+}
