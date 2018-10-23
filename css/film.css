@@ -1,0 +1,260 @@
+/*CSS Reset*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  font-family: 'Rock Salt', cursive;
+}
+
+/*Header*/
+
+
+h1 p {
+  position: inherit;
+}
+
+p {
+  color: #373737;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+
+/*Nav bar*/
+
+nav ul li {
+  display: inline;
+}
+
+
+nav li a {
+  font-family: 'Handlee', cursive;
+  list-style: none;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 3rem;
+  text-align: center;
+  color: #373737;
+}
+
+
+nav li :hover {
+  color: #b46161;
+}
+
+/*Images*/
+
+img {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  resize: both;
+}
+
+/*Footer*/
+footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+}
+
+.nav-links {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.trade-mark {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+.about {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  margin-bottom: 3rem;
+}
+
+/* Image */
+
+img {
+  width: 50%;
+  padding: 1rem;
+}
+
+
+/* Tablet*/
+@media screen and (min-width:35rem) {
+
+  /*Nav bar*/
+
+  nav li a {
+    width: calc(20%);
+    float: left;
+    float: left;
+    font-family: 'Bellefair', serif;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  /*Images*/
+  figure {
+    position: relative;
+    width: calc(33.33%);
+    float: left;
+    font-family: 'Bellefair', serif;
+  }
+
+
+  .container {
+    border: 1px;
+    padding: 1rem;
+    font-family: 'Bellefair', serif;
+  }
+
+  .container img {
+    width: 50%;
+    height: auto;
+    border: 1px;
+    padding: 1rem;
+    float: left;
+  }
+
+
+  .about {
+    position: relative;
+    width: calc(50%);
+    float: left;
+  }
+
+}

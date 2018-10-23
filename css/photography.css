@@ -1,0 +1,285 @@
+/*CSS Reset*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+body {
+    height: 100%;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Header*/
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #373737;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+}
+
+/*Nav bar*/
+nav li a .logo {
+    height: 3rem;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+@font-face {
+    font-family: steelworks;
+    src: url(/fonts/Steelworks.ttf);
+}
+
+
+nav li a {
+    font-family: steelworks;
+    list-style: none;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 4rem;
+    text-align: center;
+    color: #373737;
+}
+
+
+nav li :hover {
+    color: #b46161;
+}
+
+/*Images*/
+
+img {
+    background-color: #ffffff;
+    padding: 2rem;
+    resize: both;
+}
+
+.image {
+    width: 20rem;
+    position: relative;
+    display: center;
+    border: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.image-2 {
+    width: 16rem;
+    position: relative;
+    display: center;
+    border: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.image-3 {
+    width: 28rem;
+    position: relative;
+    display: center;
+    border: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* added */
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+
+/*Footer*/
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-links {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.trade-mark {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Added */
+.col {
+    float: left;
+}
+
+/* Tablet*/
+@media screen and (min-width:35rem) {
+
+    /*Nav bar*/
+
+    nav li a {
+        width: calc(20%);
+        float: left;
+        float: left;
+        font-family: 'Bellefair', serif;
+    }
+
+    /*Images*/
+    figure {
+        position: relative;
+        width: calc(33.33%);
+        float: left;
+        font-family: 'Bellefair', serif;
+    }
+
+
+}
