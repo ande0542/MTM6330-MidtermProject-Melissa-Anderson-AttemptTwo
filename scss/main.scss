@@ -1,309 +1,417 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote {
-
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
-}
-
-q {
-
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 //colors
+$white: #ffffff;
+$color_tuatara_approx: #373737;
+$color_matrix_approx: #b46161;
 $color_royal_purple_approx: rebeccapurple;
 $color_black_haze_approx: #f7f7f7;
-$color_tuatara_approx: #373737;
-$white: #ffffff;
-$color_matrix_approx: #b46161;
 
 //fonts
-$font_0: Bellefair;
-$font_1: serif;
-$font_2: Rock Salt;
-$font_3: cursive;
-$font_4: Franklin Gothic Medium;
-$font_5: Arial Narrow;
-$font_6: Arial;
-$font_7: sans-serif;
-$font_8: Handlee;
+$font_0: Times New Roman;
+$font_1: Times;
+$font_2: serif;
 
-
-* {
-  box-sizing: border-box;
-  line-height: 1.5;
-  background-color: $color_black_haze_approx;
-  font-family: $font_2, $font_3;
+//@extend-elements
+//original selectors
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+%extend_1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
+html {
+	@extend %extend_1;
+}
+body {
+	@extend %extend_1;
+	line-height: 1;
+}
+div {
+	@extend %extend_1;
+}
+span {
+	@extend %extend_1;
+}
+applet {
+	@extend %extend_1;
+}
+object {
+	@extend %extend_1;
+}
+iframe {
+	@extend %extend_1;
+}
 h1 {
-  text-align: center;
+	@extend %extend_1;
+	font-family: $font_0, $font_1, $font_2;
+	font-size: 4rem;
+	text-align: center;
 }
-
+h2 {
+	@extend %extend_1;
+}
+h3 {
+	@extend %extend_1;
+}
+h4 {
+	@extend %extend_1;
+}
+h5 {
+	@extend %extend_1;
+}
+h6 {
+	@extend %extend_1;
+}
 p {
-  font-size: 3rem;
-  color: $color_tuatara_approx;
-  font-family: $font_4, $font_5, $font_6, $font_7;
+	@extend %extend_1;
+	color: $color_tuatara_approx;
+	text-align: center;
 }
-
-header {
-  text-align: center;
+blockquote {
+	@extend %extend_1;
+	quotes: none;
+	&:before {
+		content: "";
+		content: none;
+	}
+	&:after {
+		content: "";
+		content: none;
+	}
 }
-
-nav {
-  li {
-    a {
-      font-family: $font_7, $font_3;
-      list-style: none;
-      width: 100%;
-      display: block;
-      text-decoration: none;
-      background-color: $white;
-      margin: 0;
-      padding: 3rem;
-      text-align: center;
-      color: $color_tuatara_approx;
-
-      .logo {
-        height: 3rem;
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    :hover {
-      color: $color_matrix_approx;
-    }
-  }
-
-  ul li {
-    display: inline;
-  }
+pre {
+	@extend %extend_1;
 }
-
-.container {
-  justify-content: center;
-  border: 1px;
-  padding: 1rem;
-  font-family: $font_0, $font_1;
-  padding-left: 5rem;
-
-  img {
-    width: 100%;
-    height: auto;
-    border: 1px;
-    padding: 1rem;
-    float: left;
-  }
-
-  p {
-    border: 1px;
-    padding: 1rem;
-  }
+a {
+	@extend %extend_1;
 }
-
-.about {
-  position: relative;
-  width: calc(75%);
-  float: left;
+abbr {
+	@extend %extend_1;
 }
-
+acronym {
+	@extend %extend_1;
+}
+address {
+	@extend %extend_1;
+}
+big {
+	@extend %extend_1;
+}
+cite {
+	@extend %extend_1;
+}
+code {
+	@extend %extend_1;
+}
+del {
+	@extend %extend_1;
+}
+dfn {
+	@extend %extend_1;
+}
+em {
+	@extend %extend_1;
+}
+img {
+	@extend %extend_1;
+}
+ins {
+	@extend %extend_1;
+}
+kbd {
+	@extend %extend_1;
+}
+q {
+	@extend %extend_1;
+	quotes: none;
+	&:before {
+		content: "";
+		content: none;
+	}
+	&:after {
+		content: "";
+		content: none;
+	}
+}
+s {
+	@extend %extend_1;
+}
+samp {
+	@extend %extend_1;
+}
+small {
+	@extend %extend_1;
+}
+strike {
+	@extend %extend_1;
+}
+strong {
+	@extend %extend_1;
+}
+sub {
+	@extend %extend_1;
+}
+sup {
+	@extend %extend_1;
+}
+tt {
+	@extend %extend_1;
+}
+var {
+	@extend %extend_1;
+}
+b {
+	@extend %extend_1;
+}
+u {
+	@extend %extend_1;
+}
+i {
+	@extend %extend_1;
+}
+center {
+	@extend %extend_1;
+}
+dl {
+	@extend %extend_1;
+}
+dt {
+	@extend %extend_1;
+}
+dd {
+	@extend %extend_1;
+}
+ol {
+	@extend %extend_1;
+	list-style: none;
+}
+ul {
+	@extend %extend_1;
+	list-style: none;
+}
+li {
+	@extend %extend_1;
+}
+fieldset {
+	@extend %extend_1;
+}
+form {
+	@extend %extend_1;
+}
+label {
+	@extend %extend_1;
+}
+legend {
+	@extend %extend_1;
+}
+table {
+	@extend %extend_1;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	@extend %extend_1;
+}
+tbody {
+	@extend %extend_1;
+}
+tfoot {
+	@extend %extend_1;
+}
+thead {
+	@extend %extend_1;
+}
+tr {
+	@extend %extend_1;
+}
+th {
+	@extend %extend_1;
+}
+td {
+	@extend %extend_1;
+}
+article {
+	@extend %extend_1;
+	display: block;
+}
+aside {
+	@extend %extend_1;
+	display: block;
+}
+canvas {
+	@extend %extend_1;
+}
+details {
+	@extend %extend_1;
+	display: block;
+}
+embed {
+	@extend %extend_1;
+}
+figure {
+	@extend %extend_1;
+	display: block;
+}
+figcaption {
+	@extend %extend_1;
+	display: block;
+}
 footer {
-  clear: both;
-  position: relative;
-  z-index: 10;
-  height: 3em;
-  margin-top: -3em;
+	@extend %extend_1;
+	display: block;
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	margin-top: -3em;
 }
-
+header {
+	@extend %extend_1;
+	display: block;
+	text-align: center;
+}
+hgroup {
+	@extend %extend_1;
+	display: block;
+}
+menu {
+	@extend %extend_1;
+	display: block;
+}
+nav {
+	@extend %extend_1;
+	display: block;
+	li {
+		a {
+			list-style: none;
+			width: 100%;
+			display: block;
+			text-decoration: none;
+			background-color: $white;
+			margin: 0;
+			padding: 3rem;
+			text-align: center;
+			color: $color_tuatara_approx;
+		}
+		:hover {
+			color: $color_matrix_approx;
+		}
+	}
+	ul li {
+		display: inline;
+	}
+}
+output {
+	@extend %extend_1;
+}
+ruby {
+	@extend %extend_1;
+}
+section {
+	@extend %extend_1;
+	display: block;
+}
+summary {
+	@extend %extend_1;
+}
+time {
+	@extend %extend_1;
+}
+mark {
+	@extend %extend_1;
+}
+audio {
+	@extend %extend_1;
+}
+video {
+	@extend %extend_1;
+}
+.test {
+	color: $color_royal_purple_approx;
+}
+* {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	line-height: 1.5;
+	background-color: $color_black_haze_approx;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.logo {
+	clear: both;
+	padding: 0;
+	width: 8rem;
+}
+.container {
+	justify-content: center;
+	border: 1px;
+	padding: 1rem;
+	padding-left: 5rem;
+	img {
+		width: 100%;
+		height: auto;
+		border: 1px;
+		padding: 1rem;
+		float: left;
+	}
+	p {
+		border: 1px;
+		padding: 1rem;
+	}
+}
+.about {
+	position: relative;
+	width: calc(75%);
+	float: left;
+}
 .nav-links {
-  text-align: center;
-  background-color: $white;
+	text-align: center;
+	background-color: $white;
 }
-
 .trade-mark {
-  text-align: center;
-  background-color: $white;
+	text-align: center;
+	background-color: $white;
 }
-
-@media screen and(min-width:35rem) {
-  .logo {
-    width: 4rem;
-  }
-
-  .container {
-    justify-content: center;
-    border: 1px;
-    padding: 1rem;
-    font-family: $font_0, $font_1;
-
-    img {
-      width: 100%;
-      height: auto;
-      border: 1px;
-      padding: 1rem;
-      float: left;
-    }
-
-    p {
-      border: 1px;
-      padding: 1rem;
-    }
-  }
-
-  .about {
-    position: relative;
-    width: calc(50%);
-    float: left;
-  }
-
-  figure {
-    position: relative;
-    width: calc(50%);
-    float: left;
-    font-family: $font_0, $font_1;
-  }
-
-  nav li a {
-    width: calc(20%);
-    float: left;
-    font-family: $font_0, $font_1;
-  }
+@media screen and(min-width: 35rem) {
+	.logo {
+		width: 6rem;
+		background-color: $white;
+	}
+	.container {
+		justify-content: center;
+		border: 1px;
+		padding: 1rem;
+		img {
+			width: 100%;
+			height: auto;
+			border: 1px;
+			padding: 1rem;
+			float: left;
+		}
+		p {
+			border: 1px;
+			padding: 1rem;
+		}
+	}
+	.about {
+		position: relative;
+		width: calc(50%);
+		float: left;
+	}
+	figure {
+		position: relative;
+		width: calc(50%);
+		float: left;
+	}
+	nav li a {
+		width: calc(20%);
+		float: left;
+	}
 }
