@@ -88,7 +88,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -117,22 +116,14 @@ q {
   quotes: none;
 }
 
-blockquote {
-
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
 }
 
-q {
-
-  &:before,
-  &:after {
-    content: '';
-    content: none;
-  }
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
 table {
@@ -140,33 +131,15 @@ table {
   border-spacing: 0;
 }
 
-//colors
-$color_royal_purple_approx: rebeccapurple;
-$color_black_haze_approx: #f7f7f7;
-$color_tuatara_approx: #373737;
-$white: #ffffff;
-$color_matrix_approx: #b46161;
-
-//fonts
-$font_0: Bellefair;
-$font_1: serif;
-$font_2: Rock Salt;
-$font_3: cursive;
-$font_4: Franklin Gothic Medium;
-$font_5: Arial Narrow;
-$font_6: Arial;
-$font_7: sans-serif;
-$font_8: Handlee;
-
 .test {
-  color: $color_royal_purple_approx;
+  color: rebeccapurple;
 }
 
 * {
   box-sizing: border-box;
   line-height: 1.5;
-  background-color: $color_black_haze_approx;
-  font-family: $font_2, $font_3;
+  background-color: #f7f7f7;
+  font-family: Rock Salt, cursive;
 }
 
 .clearfix::after {
@@ -181,65 +154,56 @@ h1 {
 
 p {
   font-size: 3rem;
-  color: $color_tuatara_approx;
-  font-family: $font_4, $font_5, $font_6, $font_7;
+  color: #373737;
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
 }
 
 header {
   text-align: center;
 }
 
-nav {
-  li {
-    a {
-      font-family: $font_7, $font_3;
-      list-style: none;
-      width: 100%;
-      display: block;
-      text-decoration: none;
-      background-color: $white;
-      margin: 0;
-      padding: 3rem;
-      text-align: center;
-      color: $color_tuatara_approx;
-
-      .logo {
-        height: 3rem;
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    :hover {
-      color: $color_matrix_approx;
-    }
-  }
-
-  ul li {
-    display: inline;
-  }
+nav li a {
+  font-family: sans-serif, cursive;
+  list-style: none;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 3rem;
+  text-align: center;
+  color: #373737;
+}
+nav li a .logo {
+  height: 3rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+nav li :hover {
+  color: #b46161;
+}
+nav ul li {
+  display: inline;
 }
 
 .container {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  font-family: $font_0, $font_1;
+  font-family: Bellefair, serif;
   padding-left: 5rem;
-
-  img {
-    width: 100%;
-    height: auto;
-    border: 1px;
-    padding: 1rem;
-    float: left;
-  }
-
-  p {
-    border: 1px;
-    padding: 1rem;
-  }
+}
+.container img {
+  width: 100%;
+  height: auto;
+  border: 1px;
+  padding: 1rem;
+  float: left;
+}
+.container p {
+  border: 1px;
+  padding: 1rem;
 }
 
 .about {
@@ -258,15 +222,15 @@ footer {
 
 .nav-links {
   text-align: center;
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .trade-mark {
   text-align: center;
-  background-color: $white;
+  background-color: #ffffff;
 }
 
-@media screen and(min-width:35rem) {
+@media screen and (min-width: 35rem) {
   .logo {
     width: 4rem;
   }
@@ -275,20 +239,18 @@ footer {
     justify-content: center;
     border: 1px;
     padding: 1rem;
-    font-family: $font_0, $font_1;
-
-    img {
-      width: 100%;
-      height: auto;
-      border: 1px;
-      padding: 1rem;
-      float: left;
-    }
-
-    p {
-      border: 1px;
-      padding: 1rem;
-    }
+    font-family: Bellefair, serif;
+  }
+  .container img {
+    width: 100%;
+    height: auto;
+    border: 1px;
+    padding: 1rem;
+    float: left;
+  }
+  .container p {
+    border: 1px;
+    padding: 1rem;
   }
 
   .about {
@@ -301,12 +263,14 @@ footer {
     position: relative;
     width: calc(50%);
     float: left;
-    font-family: $font_0, $font_1;
+    font-family: Bellefair, serif;
   }
 
   nav li a {
     width: calc(20%);
     float: left;
-    font-family: $font_0, $font_1;
+    font-family: Bellefair, serif;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
