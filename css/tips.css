@@ -99,7 +99,7 @@ section {
 
 ul {
   list-style: none; }
-
+/* Overall site */
 * {
   box-sizing: border-box;
   line-height: 1.5;
@@ -109,26 +109,27 @@ ul {
   content: "";
   display: block;
   clear: both; }
-
+/* Images */
 .logo {
   clear: both;
   padding: 0;
   width: 8rem; }
-
+/* Nav Bar */
 .nav-links {
   text-align: center;
   background-color: #ffffff; }
-
+/* Footer */
 .trade-mark {
   text-align: center;
   background-color: #ffffff; }
-
+/* Content */
 .about {
   text-align: center;
   padding: 1rem 0;
   margin-bottom: 3rem; }
 
 @media screen and (min-width: 35rem) {
+  /* Images */
   .logo {
     width: 6rem;
     background-color: #ffffff; }
@@ -141,10 +142,12 @@ ul {
       border: 1px;
       padding: 1rem;
       float: left; }
+      /* Content */
   .about {
     position: relative;
     width: calc(50%);
     float: left; }
+        /*Nav bar */
   nav li a {
     width: calc(20%);
     float: left; } }

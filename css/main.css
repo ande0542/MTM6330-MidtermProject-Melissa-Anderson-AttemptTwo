@@ -101,7 +101,7 @@ section {
 
 .test {
   color: rebeccapurple; }
-
+/* Overall site */
 * {
   box-sizing: border-box;
   line-height: 1.5;
@@ -111,7 +111,7 @@ section {
   content: "";
   display: block;
   clear: both; }
-
+/* Images */
 .logo {
   clear: both;
   padding: 0;
@@ -128,6 +128,7 @@ section {
     border: 1px;
     padding: 1rem;
     float: left; }
+    /* Content */
   .container p {
     border: 1px;
     padding: 1rem; }
@@ -136,16 +137,17 @@ section {
   position: relative;
   width: calc(75%);
   float: left; }
-
+/* Nav Bar */
 .nav-links {
   text-align: center;
   background-color: #ffffff; }
-
+/* Footer */
 .trade-mark {
   text-align: center;
   background-color: #ffffff; }
 
 @media screen and (min-width: 35rem) {
+  /* Images */
   .logo {
     width: 6rem;
     background-color: #ffffff; }
@@ -159,6 +161,7 @@ section {
       border: 1px;
       padding: 1rem;
       float: left; }
+      /* Content */
     .container p {
       border: 1px;
       padding: 1rem; }
@@ -170,6 +173,7 @@ section {
     position: relative;
     width: calc(50%);
     float: left; }
+    /* Nav Bar */
   nav li a {
     width: calc(20%);
     float: left; } }

@@ -9,7 +9,7 @@ $font_0: Times New Roman;
 $font_1: Times;
 $font_2: serif;
 
-//@extend-elements
+//CSS REST FOR SCSS
 //original selectors
 //a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
 %extend_1 {
@@ -330,8 +330,10 @@ var {
 video {
 	@extend %extend_1;
 }
+
+//Overall site
+
 * {
-	//Instead of the line below you could use @include box-sizing($bs)
 	box-sizing: border-box;
 	line-height: 1.5;
 	background-color: $color_black_haze_approx;
@@ -341,29 +343,45 @@ video {
 	display: block;
 	clear: both;
 }
+
+//Images
+
 .logo {
 	clear: both;
 	padding: 0;
 	width: 8rem;
 }
+
+//Nav Bar
+
 .nav-links {
 	text-align: center;
 	background-color: $white;
 }
+
+//Footer
 .trade-mark {
 	text-align: center;
 	background-color: $white;
 }
+
+//Content
+
 .about {
 	text-align: center;
 	padding: 1rem 0;
 	margin-bottom: 3rem;
 }
 @media screen and(min-width: 35rem) {
+
+	//Images
+
 	.logo {
 		width: 6rem;
 		background-color: $white;
 	}
+	//Content
+
 	.container {
 		border: 1px;
 		padding: 1rem;
@@ -380,6 +398,8 @@ video {
 		width: calc(50%);
 		float: left;
 	}
+	//Nav Bar
+	
 	nav li a {
 		width: calc(20%);
 		float: left;
