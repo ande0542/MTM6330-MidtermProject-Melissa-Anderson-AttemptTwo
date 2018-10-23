@@ -116,12 +116,14 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -174,15 +176,18 @@ nav li a {
   text-align: center;
   color: #373737;
 }
+
 nav li a .logo {
   height: 3rem;
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 nav li :hover {
   color: #b46161;
 }
+
 nav ul li {
   display: inline;
 }
@@ -194,6 +199,7 @@ nav ul li {
   font-family: Bellefair, serif;
   padding-left: 5rem;
 }
+
 .container img {
   width: 100%;
   height: auto;
@@ -201,6 +207,7 @@ nav ul li {
   padding: 1rem;
   float: left;
 }
+
 .container p {
   border: 1px;
   padding: 1rem;
@@ -241,6 +248,7 @@ footer {
     padding: 1rem;
     font-family: Bellefair, serif;
   }
+
   .container img {
     width: 100%;
     height: auto;
@@ -248,6 +256,7 @@ footer {
     padding: 1rem;
     float: left;
   }
+
   .container p {
     border: 1px;
     padding: 1rem;
