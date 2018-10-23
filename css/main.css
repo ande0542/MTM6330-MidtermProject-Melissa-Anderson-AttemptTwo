@@ -1,288 +1,175 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+  vertical-align: baseline; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-ol,
-ul {
-  list-style: none;
-}
+h1 {
+  font-family: Times New Roman, Times, serif;
+  font-size: 4rem;
+  text-align: center; }
 
-blockquote,
+p {
+  color: #373737;
+  text-align: center; }
+
+blockquote {
+  quotes: none; }
+  blockquote:before {
+    content: "";
+    content: none; }
+  blockquote:after {
+    content: "";
+    content: none; }
+
 q {
-  quotes: none;
-}
+  quotes: none; }
+  q:before {
+    content: "";
+    content: none; }
+  q:after {
+    content: "";
+    content: none; }
 
-blockquote:before,
-blockquote:after {
-  content: "";
-  content: none;
-}
+ol {
+  list-style: none; }
 
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
+ul {
+  list-style: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
+
+article {
+  display: block; }
+
+aside {
+  display: block; }
+
+details {
+  display: block; }
+
+figure {
+  display: block; }
+
+figcaption {
+  display: block; }
+
+footer {
+  display: block;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em; }
+
+header {
+  display: block;
+  text-align: center; }
+
+hgroup {
+  display: block; }
+
+menu {
+  display: block; }
+
+nav {
+  display: block; }
+  nav li a {
+    list-style: none;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    color: #373737; }
+  nav li :hover {
+    color: #b46161; }
+  nav ul li {
+    display: inline; }
+
+section {
+  display: block; }
 
 .test {
-  color: rebeccapurple;
-}
+  color: rebeccapurple; }
 
 * {
   box-sizing: border-box;
   line-height: 1.5;
-  background-color: #f7f7f7;
-}
+  background-color: #f7f7f7; }
 
 .clearfix::after {
   content: "";
   display: block;
-  clear: both;
-}
-
-h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 4rem;
-  text-align: center;
-}
-
-p {
-  color: #373737;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-header {
-  text-align: center;
-}
-
-/*Nav bar*/
-
-nav li a {
-  list-style: none;
-  width: 100%;
-  display: block;
-  text-decoration: none;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 3rem;
-  text-align: center;
-  color: #373737;
-}
-
-
-nav li :hover {
-  color: #b46161;
-}
-
-nav ul li {
-  display: inline;
-}
-
-/*Images*/
-
+  clear: both; }
 
 .logo {
   clear: both;
-  padding: 0%;
-  width: 8rem;
-}
+  padding: 0;
+  width: 8rem; }
 
 .container {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  padding-left: 5rem;
-}
-
-.container img {
-  width: 100%;
-  height: auto;
-  border: 1px;
-  padding: 1rem;
-  float: left;
-}
-
-.container p {
-  border: 1px;
-  padding: 1rem;
-}
-
-.about {
-  position: relative;
-  width: calc(75%);
-  float: left;
-}
-
-footer {
-  clear: both;
-  position: relative;
-  z-index: 10;
-  height: 3em;
-  margin-top: -3em;
-}
-
-.nav-links {
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.trade-mark {
-  text-align: center;
-  background-color: #ffffff;
-}
-
-@media screen and (min-width: 35rem) {
-
-  .logo {
-    width: 6rem;
-    background-color: #ffffff
-  }
-
-  .container {
-    justify-content: center;
-    border: 1px;
-    padding: 1rem;
-  }
-
+  padding-left: 5rem; }
   .container img {
     width: 100%;
     height: auto;
     border: 1px;
     padding: 1rem;
-    float: left;
-  }
-
+    float: left; }
   .container p {
     border: 1px;
-    padding: 1rem;
-  }
+    padding: 1rem; }
 
+.about {
+  position: relative;
+  width: calc(75%);
+  float: left; }
+
+.nav-links {
+  text-align: center;
+  background-color: #ffffff; }
+
+.trade-mark {
+  text-align: center;
+  background-color: #ffffff; }
+
+@media screen and (min-width: 35rem) {
+  .logo {
+    width: 6rem;
+    background-color: #ffffff; }
+  .container {
+    justify-content: center;
+    border: 1px;
+    padding: 1rem; }
+    .container img {
+      width: 100%;
+      height: auto;
+      border: 1px;
+      padding: 1rem;
+      float: left; }
+    .container p {
+      border: 1px;
+      padding: 1rem; }
   .about {
     position: relative;
     width: calc(50%);
-    float: left;
-  }
-
+    float: left; }
   figure {
     position: relative;
     width: calc(50%);
-    float: left;
-  }
-
+    float: left; }
   nav li a {
     width: calc(20%);
-    float: left;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
+    float: left; } }
