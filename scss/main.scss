@@ -1,27 +1,7 @@
-//colors
-$color_royal_purple_approx: rgb(122, 51, 140);
-$color_black_haze_approx: #f7f7f7;
-$color_tuatara_approx: #373737;
-$white: #ffffff;
-$color_matrix_approx: #b46161;
-
-//fonts
-$font_0: Bellefair;
-$font_1: serif;
-$font_2: Rock Salt;
-$font_3: cursive;
-$font_4: Franklin Gothic Medium;
-$font_5: Arial Narrow;
-$font_6: Arial;
-$font_7: sans-serif;
-$font_8: Handlee;
-
-
 * {
   box-sizing: border-box;
   line-height: 1.5;
-  background-color: $color_black_haze_approx;
-  font-family: $font_2, $font_3;
+  background-color: #f7f7f7;
 }
 
 .clearfix::after {
@@ -31,58 +11,58 @@ $font_8: Handlee;
 }
 
 h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
   text-align: center;
 }
 
 p {
-  font-size: 3rem;
-  color: $color_tuatara_approx;
-  font-family: $font_4, $font_5, $font_6, $font_7;
+  color: #373737;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
   text-align: center;
 }
 
+/*Nav bar*/
+
 nav {
   li {
     a {
-      font-family: $font_7, $font_3;
       list-style: none;
       width: 100%;
       display: block;
       text-decoration: none;
-      background-color: $white;
+      background-color: #ffffff;
       margin: 0;
       padding: 3rem;
       text-align: center;
-      color: $color_tuatara_approx;
-
-      .logo {
-        height: 3rem;
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
+      color: #373737;
     }
-
     :hover {
-      color: $color_matrix_approx;
+      color: #b46161;
     }
   }
-
   ul li {
     display: inline;
   }
+}
+
+/*Images*/
+
+.logo {
+  clear: both;
+  padding: 0%;
+  width: 8rem;
 }
 
 .container {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  font-family: $font_0, $font_1;
   padding-left: 5rem;
-
   img {
     width: 100%;
     height: auto;
@@ -90,7 +70,6 @@ nav {
     padding: 1rem;
     float: left;
   }
-
   p {
     border: 1px;
     padding: 1rem;
@@ -111,27 +90,20 @@ footer {
   margin-top: -3em;
 }
 
-.nav-links {
+.nav-links, .trade-mark {
   text-align: center;
-  background-color: $white;
+  background-color: #ffffff;
 }
 
-.trade-mark {
-  text-align: center;
-  background-color: $white;
-}
-
-@media screen and(min-width:35rem) {
+@media screen and (min-width: 35rem) {
   .logo {
-    width: 4rem;
+    width: 6rem;
+    background-color: #ffffff;
   }
-
   .container {
     justify-content: center;
     border: 1px;
     padding: 1rem;
-    font-family: $font_0, $font_1;
-
     img {
       width: 100%;
       height: auto;
@@ -139,29 +111,18 @@ footer {
       padding: 1rem;
       float: left;
     }
-
     p {
       border: 1px;
       padding: 1rem;
     }
   }
-
-  .about {
+  .about, figure {
     position: relative;
     width: calc(50%);
     float: left;
   }
-
-  figure {
-    position: relative;
-    width: calc(50%);
-    float: left;
-    font-family: $font_0, $font_1;
-  }
-
   nav li a {
     width: calc(20%);
     float: left;
-    font-family: $font_0, $font_1;
   }
 }
