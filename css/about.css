@@ -102,9 +102,9 @@ ul {
   clear: both; }
 
 .logo {
-  clear: both;
   padding: 0;
-  width: 8rem; }
+  width: 8rem;
+  background-color: #f7f7f7; }
 
 .container {
   justify-content: center;
@@ -116,8 +116,7 @@ ul {
     height: auto;
     border: 1px;
     padding: 1rem;
-    float: left;
-    background-color: #f7f7f7; }
+    float: left; }
   .container p {
     border: 1px;
     padding: 1rem; }
@@ -138,7 +137,7 @@ ul {
 @media screen and (min-width: 35rem) {
   .logo {
     width: 6rem;
-    background-color: #ffffff; }
+    background-color: #f7f7f7; }
   .container {
     justify-content: center;
     border: 1px;
@@ -148,7 +147,8 @@ ul {
       height: auto;
       border: 1px;
       padding: 1rem;
-      float: left; }
+      float: left;
+      background-color: #f7f7f7; }
     .container p {
       border: 1px;
       padding: 1rem; }

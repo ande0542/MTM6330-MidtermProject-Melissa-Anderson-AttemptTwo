@@ -427,9 +427,9 @@ video {
 }
 
 .logo {
-  clear: both;
   padding: 0;
   width: 8rem;
+  background-color: $color_black_haze_approx;
 }
 
 .container {
@@ -444,7 +444,6 @@ video {
     border: 1px;
     padding: 1rem;
     float: left;
-    background-color: $color_black_haze_approx;
   }
 
   p {
@@ -472,7 +471,7 @@ video {
 @media screen and(min-width: 35rem) {
   .logo {
     width: 6rem;
-    background-color: $white;
+    background-color: $color_black_haze_approx;
   }
 
   .container {
@@ -486,6 +485,7 @@ video {
       border: 1px;
       padding: 1rem;
       float: left;
+      background-color: $color_black_haze_approx;
     }
 
     p {
