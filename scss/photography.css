@@ -141,13 +141,11 @@ body {
 
 /*Header*/
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
 }
 
 p {
   color: #373737;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 5rem;
   text-align: center;
 }
@@ -169,14 +167,8 @@ nav ul li {
   display: inline;
 }
 
-@font-face {
-  font-family: steelworks;
-  src: url(/fonts/Steelworks.ttf);
-}
-
 
 nav li a {
-  font-family: steelworks;
   list-style: none;
   width: 100%;
   display: block;
@@ -270,7 +262,6 @@ footer {
     width: calc(20%);
     float: left;
     float: left;
-    font-family: 'Bellefair', serif;
   }
 
   /*Images*/
@@ -278,7 +269,6 @@ footer {
     position: relative;
     width: calc(33.33%);
     float: left;
-    font-family: 'Bellefair', serif;
   }
 
 

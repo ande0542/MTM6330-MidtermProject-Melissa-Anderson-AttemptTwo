@@ -141,7 +141,6 @@ table {
   box-sizing: border-box;
   line-height: 1.5;
   background-color: #f7f7f7;
-  font-family: Rock Salt, cursive;
 }
 
 .clearfix::after {
@@ -157,7 +156,6 @@ h1 {
 p {
   font-size: 3rem;
   color: #373737;
-  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
 }
 
 header {
@@ -165,7 +163,6 @@ header {
 }
 
 nav li a {
-  font-family: sans-serif, cursive;
   list-style: none;
   width: 100%;
   display: block;
@@ -196,7 +193,6 @@ nav ul li {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  font-family: Bellefair, serif;
   padding-left: 5rem;
 }
 
@@ -246,7 +242,6 @@ footer {
     justify-content: center;
     border: 1px;
     padding: 1rem;
-    font-family: Bellefair, serif;
   }
 
   .container img {
@@ -272,13 +267,11 @@ footer {
     position: relative;
     width: calc(50%);
     float: left;
-    font-family: Bellefair, serif;
   }
 
   nav li a {
     width: calc(20%);
     float: left;
-    font-family: Bellefair, serif;
   }
 }
 

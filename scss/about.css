@@ -127,7 +127,6 @@ q:before {
   box-sizing: border-box;
   line-height: 1.5;
   background-color: #f7f7f7;
-  font-family: 'Rock Salt', cursive;
 }
 
 .clearfix::after {
@@ -140,11 +139,12 @@ q:before {
 
 h1 {
   text-align: center;
+  font-size: 4rem;
 }
 
 p {
   color: #373737;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 }
 
 header {
@@ -166,7 +166,6 @@ nav li a .logo {
 
 
 nav li a {
-  font-family: 'Handlee', cursive;
   list-style: none;
   width: 100%;
   display: block;
@@ -188,7 +187,6 @@ nav li :hover {
   justify-content: center;
   border: 1px;
   padding: 1rem;
-  font-family: 'Bellefair', serif;
   padding-left: 4rem;
 }
 
@@ -242,7 +240,6 @@ footer {
     width: calc(20%);
     float: left;
     float: left;
-    font-family: 'Bellefair', serif;
   }
 
   /*Images*/
@@ -258,7 +255,6 @@ footer {
     justify-content: center;
     border: 1px;
     padding: 1rem;
-    font-family: 'Bellefair', serif;
   }
 
   .container img {
