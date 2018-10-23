@@ -1,15 +1,25 @@
 //colors
 $white: #ffffff;
+<<<<<<< HEAD
 $color_tuatara_approx: #373737;
 $color_matrix_approx: #b46161;
 $color_black_haze_approx: #f7f7f7;
+=======
+$color_black_haze_approx: #f7f7f7;
+$color_tuatara_approx: #373737;
+$color_matrix_approx: #b46161;
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 
 //fonts
 $font_0: Times New Roman;
 $font_1: Times;
 $font_2: serif;
 
+<<<<<<< HEAD
 //CSS REST FOR SCSS
+=======
+//@extend-elements
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 //original selectors
 //a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
 %extend_1 {
@@ -196,7 +206,10 @@ h6 {
 
 header {
   @extend %extend_1;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   display: block;
 }
 
@@ -417,9 +430,15 @@ var {
 video {
   @extend %extend_1;
 }
+<<<<<<< HEAD
 //Overall site
 
 * {
+=======
+
+* {
+  //Instead of the line below you could use @include box-sizing($bs)
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   box-sizing: border-box;
   line-height: 1.5;
   background-color: $color_black_haze_approx;
@@ -430,33 +449,53 @@ video {
   display: block;
   clear: both;
 }
+<<<<<<< HEAD
 //Images
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .logo {
   clear: both;
   padding: 0;
   width: 8rem;
 }
+<<<<<<< HEAD
 	//Nav Bar
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .nav-links {
   text-align: center;
   background-color: $white;
 }
+<<<<<<< HEAD
 //Footer
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .trade-mark {
   text-align: center;
   background-color: $white;
 }
+<<<<<<< HEAD
 //Content
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .about {
   text-align: center;
   padding: 1rem 0;
   margin-bottom: 3rem;
 }
 
+<<<<<<< HEAD
 @media screen and(min-width: 35rem) {
 
 	//Images
 
+=======
+@media screen and(min-width:35rem) {
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .logo {
     width: 6rem;
     background-color: $white;
@@ -481,16 +520,22 @@ video {
     }
   }
 
+<<<<<<< HEAD
 //Content
 
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .about {
     position: relative;
     width: calc(50%);
     float: left;
   }
 
+<<<<<<< HEAD
   //Nav Bar
 
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   nav li a {
     width: calc(20%);
     float: left;

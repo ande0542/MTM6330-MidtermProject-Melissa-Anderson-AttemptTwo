@@ -4,6 +4,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   border: 0;
   font: inherit;
   vertical-align: baseline; }
+<<<<<<< HEAD
 
 article {
   display: block; }
@@ -32,6 +33,36 @@ figcaption {
 figure {
   display: block; }
 
+=======
+
+article {
+  display: block; }
+
+aside {
+  display: block; }
+
+blockquote {
+  quotes: none; }
+  blockquote:after {
+    content: '';
+    content: none; }
+  blockquote:before {
+    content: '';
+    content: none; }
+
+body {
+  height: 100%; }
+
+details {
+  display: block; }
+
+figcaption {
+  display: block; }
+
+figure {
+  display: block; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 footer {
   display: block;
   clear: both;
@@ -84,6 +115,7 @@ ol {
 p {
   color: #373737;
   text-align: center; }
+<<<<<<< HEAD
 
 q {
   quotes: none; }
@@ -100,6 +132,24 @@ section {
 ul {
   list-style: none; }
 /* Overall site */
+=======
+
+q {
+  quotes: none; }
+  q:after {
+    content: '';
+    content: none; }
+  q:before {
+    content: '';
+    content: none; }
+
+section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 * {
   box-sizing: border-box;
   line-height: 1.5;
@@ -109,11 +159,16 @@ ul {
   content: "";
   display: block;
   clear: both; }
+<<<<<<< HEAD
 /* Images */
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .logo {
   clear: both;
   padding: 0;
   width: 8rem; }
+<<<<<<< HEAD
 /* Nav Bar */
 .nav-links {
   text-align: center;
@@ -123,13 +178,27 @@ ul {
   text-align: center;
   background-color: #ffffff; }
 /* Content */
+=======
+
+.nav-links {
+  text-align: center;
+  background-color: #ffffff; }
+
+.trade-mark {
+  text-align: center;
+  background-color: #ffffff; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .about {
   text-align: center;
   padding: 1rem 0;
   margin-bottom: 3rem; }
 
 @media screen and (min-width: 35rem) {
+<<<<<<< HEAD
   /* Images */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .logo {
     width: 6rem;
     background-color: #ffffff; }
@@ -142,12 +211,18 @@ ul {
       border: 1px;
       padding: 1rem;
       float: left; }
+<<<<<<< HEAD
       /* Content */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .about {
     position: relative;
     width: calc(50%);
     float: left; }
+<<<<<<< HEAD
         /*Nav bar */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   nav li a {
     width: calc(20%);
     float: left; } }

@@ -101,22 +101,40 @@ section {
 
 .test {
   color: rebeccapurple; }
+<<<<<<< HEAD
 /* Overall site */
 * {
   box-sizing: border-box;
   line-height: 1.5;
   background-color: #f7f7f7; }
 
+=======
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f7f7f7; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .clearfix::after {
   content: "";
   display: block;
   clear: both; }
+<<<<<<< HEAD
 /* Images */
 .logo {
   clear: both;
   padding: 0;
   width: 8rem; }
 
+=======
+
+.logo {
+  clear: both;
+  padding: 0;
+  width: 8rem; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .container {
   justify-content: center;
   border: 1px;
@@ -128,7 +146,10 @@ section {
     border: 1px;
     padding: 1rem;
     float: left; }
+<<<<<<< HEAD
     /* Content */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .container p {
     border: 1px;
     padding: 1rem; }
@@ -137,17 +158,28 @@ section {
   position: relative;
   width: calc(75%);
   float: left; }
+<<<<<<< HEAD
 /* Nav Bar */
 .nav-links {
   text-align: center;
   background-color: #ffffff; }
 /* Footer */
+=======
+
+.nav-links {
+  text-align: center;
+  background-color: #ffffff; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .trade-mark {
   text-align: center;
   background-color: #ffffff; }
 
 @media screen and (min-width: 35rem) {
+<<<<<<< HEAD
   /* Images */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .logo {
     width: 6rem;
     background-color: #ffffff; }
@@ -161,7 +193,10 @@ section {
       border: 1px;
       padding: 1rem;
       float: left; }
+<<<<<<< HEAD
       /* Content */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
     .container p {
       border: 1px;
       padding: 1rem; }
@@ -173,7 +208,10 @@ section {
     position: relative;
     width: calc(50%);
     float: left; }
+<<<<<<< HEAD
     /* Nav Bar */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   nav li a {
     width: calc(20%);
     float: left; } }

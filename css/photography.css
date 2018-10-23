@@ -77,6 +77,7 @@ nav {
 
 ol {
   list-style: none; }
+<<<<<<< HEAD
 
 p {
   color: #373737;
@@ -102,11 +103,42 @@ ul {
   line-height: 1.5;
   background-color: #f7f7f7; }
 
+=======
+
+p {
+  color: #373737;
+  text-align: center; }
+
+q {
+  quotes: none; }
+  q:after {
+    content: '';
+    content: none; }
+  q:before {
+    content: '';
+    content: none; }
+
+section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f7f7f7; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .clearfix::after {
   content: "";
   display: block;
   clear: both; }
+<<<<<<< HEAD
 /* Images */
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .logo {
   clear: both;
   padding: 0;
@@ -135,36 +167,61 @@ ul {
   border: 1rem;
   margin-right: 1rem;
   margin-left: 1rem; }
+<<<<<<< HEAD
 /* Content */
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .container {
   display: flex;
   justify-content: center;
   position: relative;
   margin-bottom: 2rem; }
+<<<<<<< HEAD
 /* Nav Bar */
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .nav-links {
   margin-top: 5rem;
   text-align: center;
   background-color: #ffffff; }
+<<<<<<< HEAD
 /* Footer */
 .trade-mark {
   text-align: center;
   background-color: #ffffff; }
 /* Content */
+=======
+
+.trade-mark {
+  text-align: center;
+  background-color: #ffffff; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .col {
   float: left; }
 
 @media screen and (min-width: 35rem) {
+<<<<<<< HEAD
     /* Images */
   .logo {
     width: 6rem;
     background-color: #ffffff; }
     /* Content */
+=======
+  .logo {
+    width: 6rem;
+    background-color: #ffffff; }
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   figure {
     position: relative;
     width: calc(33.33%);
     float: left; }
+<<<<<<< HEAD
     /*Nav bar */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   nav li a {
     width: calc(20%);
     float: left; } }

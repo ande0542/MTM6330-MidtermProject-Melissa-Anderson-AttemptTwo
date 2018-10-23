@@ -4,6 +4,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   border: 0;
   font: inherit;
   vertical-align: baseline; }
+<<<<<<< HEAD
 
 article {
   display: block; }
@@ -104,15 +105,120 @@ ul {
   line-height: 1.5;
   background-color: #f7f7f7; }
 
+=======
+
+article {
+  display: block; }
+
+aside {
+  display: block; }
+
+blockquote {
+  quotes: none; }
+  blockquote:after {
+    content: '';
+    content: none; }
+  blockquote:before {
+    content: '';
+    content: none; }
+
+details {
+  display: block; }
+
+figcaption {
+  display: block; }
+
+figure {
+  display: block; }
+
+footer {
+  display: block;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em; }
+
+h1 {
+  font-family: Times New Roman, Times, serif;
+  font-size: 4rem;
+  text-align: center; }
+
+header {
+  display: block; }
+
+hgroup {
+  display: block; }
+
+img {
+  width: 50%;
+  padding: 1rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  resize: both; }
+
+menu {
+  display: block; }
+
+nav {
+  display: block; }
+  nav li a {
+    list-style: none;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    color: #373737; }
+  nav li :hover {
+    color: #b46161; }
+  nav ul li {
+    display: inline; }
+
+ol {
+  list-style: none; }
+
+p {
+  color: #373737;
+  text-align: center; }
+
+q {
+  quotes: none; }
+  q:after {
+    content: '';
+    content: none; }
+  q:before {
+    content: '';
+    content: none; }
+
+section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f7f7f7; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .clearfix::after {
   content: "";
   display: block;
   clear: both; }
+<<<<<<< HEAD
 /* Images */
+=======
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .logo {
   clear: both;
   padding: 0;
   width: 8rem; }
+<<<<<<< HEAD
 /* Nav Bar */
 .nav-links {
   text-align: center;
@@ -122,13 +228,27 @@ ul {
   text-align: center;
   background-color: #ffffff; }
 /* Content */
+=======
+
+.nav-links {
+  text-align: center;
+  background-color: #ffffff; }
+
+.trade-mark {
+  text-align: center;
+  background-color: #ffffff; }
+
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
 .about {
   text-align: center;
   padding: 1rem 0;
   margin-bottom: 3rem; }
 
 @media screen and (min-width: 35rem) {
+<<<<<<< HEAD
   /* Images */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .logo {
     width: 6rem;
     background-color: #ffffff; }
@@ -145,12 +265,18 @@ ul {
       border: 1px;
       padding: 1rem;
       float: left; }
+<<<<<<< HEAD
   /* Content */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   .about {
     position: relative;
     width: calc(50%);
     float: left; }
+<<<<<<< HEAD
 /* Nav Bar */
+=======
+>>>>>>> 073dc8de9bc2c82f013a0bc133e1f71cabe4feef
   nav li a {
     width: calc(20%);
     float: left; } }

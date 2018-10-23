@@ -12,7 +12,7 @@ gulp.task('sass', function () {
   // of the PostCSS plugins that we want to use.
   const plugins = [
     autoprefixer({
-      browsers: ['last 3 version']
+      browsers: ['last 2 version']
     }),
     cssnano()
   ]
